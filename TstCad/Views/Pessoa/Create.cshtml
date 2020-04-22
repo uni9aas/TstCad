@@ -1,0 +1,45 @@
+﻿@model TstCad.Models.PessoaModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>PessoaModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PessoaId" class="control-label"></label>
+                <input asp-for="PessoaId" class="form-control" />
+                <span asp-validation-for="PessoaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomePessoa" class="control-label"></label>
+                <input asp-for="NomePessoa" class="form-control" />
+                <span asp-validation-for="NomePessoa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailPessoa" class="control-label"></label>
+                <input asp-for="EmailPessoa" class="form-control" />
+                <span asp-validation-for="EmailPessoa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelefonePessoa" class="control-label"></label>
+                <input asp-for="TelefonePessoa" class="form-control" />
+                <span asp-validation-for="TelefonePessoa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
